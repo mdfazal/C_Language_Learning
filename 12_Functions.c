@@ -4,11 +4,13 @@
 int main()
 {
     printf("Top");
-    sayhi();
+    sayhi("Mike");
+    sayhi("Mama");
+    sayhi("Tom");
     printf("Bottom");
     return 0;
 }
 
-void sayhi(){
-    printf("Hello User");
+void sayhi(char name[]){
+    printf("Hello %s", name);
 }
