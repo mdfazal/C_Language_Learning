@@ -3,14 +3,14 @@
 
 int main()
 {
-    printf("Top");
-    sayhi("Mike");
-    sayhi("Mama");
-    sayhi("Tom");
+    printf("Top\n");
+    sayhi("Mike", 40);
+    sayhi("Mama", 30);
+    sayhi("Tom", 20);
     printf("Bottom");
     return 0;
 }
 
-void sayhi(char name[]){
-    printf("Hello %s", name);
+void sayhi(char name[], int age){
+    printf("Hello %s you are %d\n", name, age);
 }
