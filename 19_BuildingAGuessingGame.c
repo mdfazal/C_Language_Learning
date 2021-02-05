@@ -17,7 +17,12 @@ int main (){
             outofGuesses == 1;
         }
     }
-    printf("You win!");
+    if(outofGuesses == 1){
+        printf("Out of guesses");
+    } else {
+        printf("You win!");
+    }
+    
 
     return 0;
 }
