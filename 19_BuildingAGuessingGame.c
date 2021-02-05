@@ -14,7 +14,7 @@ int main (){
             scanf("%d", &guess);
             guessCount++;
         } else {
-            outofGuesses == 1;
+            outofGuesses = 1;
         }
     }
     if(outofGuesses == 1){
