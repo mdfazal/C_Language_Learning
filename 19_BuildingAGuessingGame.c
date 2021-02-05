@@ -4,12 +4,20 @@
 int main (){
     int secretNumber = 5;
     int guess;
+    int guessCount = 0;
+    int guessLimit = 3;
+    int outofGuesses = 0;
 
-    while(guess != secretNumber){
-        printf("Enetr a number");
-        scanf("%d", &guess);
-
+    while(guess != secretNumber && outofGuesses == 0){
+        if(guessCount < guessLimit){
+            printf("Enetr a number: ");
+            scanf("%d", &guess);
+            guessCount++;
+        } else {
+            outofGuesses == 1;
+        }
     }
+    printf("You win!");
 
     return 0;
 }
