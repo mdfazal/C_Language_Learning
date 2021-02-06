@@ -6,6 +6,9 @@ int main (){
     int age = 30;
     int * pAge = &age;
 
-    printf("%p", pAge);
+    printf("%d\n", *pAge);
+    printf("%d\n", *&age);
+    printf("%d", &*&age);
+    
     return 0;
 }
