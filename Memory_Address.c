@@ -6,5 +6,7 @@ int main (){
     int gpa = 3.4;
     char grade = 'A';
 
+    printf("age: %p, gpa: %p, grade: %p", &age, &gpa, &grade);
+
     return 0;
 }
